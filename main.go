@@ -13,9 +13,6 @@ func main() {
 	}
 
 	for _, s := range stats {
-		fmt.Println(s)
-		fmt.Println(s.Container)
-		fmt.Println(s.Memory)
-		fmt.Println(s.CPU)
+		fmt.Println("Container", s.Container, "CPU Usage:", s.CPU, "Memory Usage:", s.Memory.Percent, "Network Usage:", s.IO.Network)
 	}
 }
